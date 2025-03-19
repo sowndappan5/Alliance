@@ -43,7 +43,7 @@ function register() {
             return updateProfile(user, {
                 displayName: name
             }).then(() => {
-                window.location.href = "404.html";
+                window.location.href = "home.html";
             });
         })
         .catch((error) => {
@@ -58,7 +58,7 @@ function login() {
 
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-            window.location.href = "404.html";
+            window.location.href = "home.html";
         })
         .catch((error) => {
             alert("Login failed: " + error.message); // Fixed incorrect alert message
